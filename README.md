@@ -1,5 +1,6 @@
 # OiscSim
 ### One Instruction-Set Computer Simulator and Assembler
+We have developed a toolchain for SubRISC, small and energy-efficient RISC processor. It has the limited number of simple instructions extended from Subtract and branch on NeGative with 4 operands (SNG4).
 
 ## Dependencies
 - .NET Framework 4.0 or Mono
