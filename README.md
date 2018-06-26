@@ -1,7 +1,5 @@
 # OiscSim
 ### One Instruction-Set Computer Simulator and Assembler
-We have developed a small and energy-efficient RISC processor, called SubRISC, which has the limited number of simple instructions extended from Subtract and branch on NeGative with 4 operands (SNG4).
-The processor is described in synthesizable Verilog HDL by Synopsys Design Compiler. 
 
 ## Dependencies
 - .NET Framework 4.0 or Mono
