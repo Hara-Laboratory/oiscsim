@@ -83,10 +83,10 @@ To place a section, it should be defined as:
   - `.constant <name> [<length>] = { <value1>, <value2>, ... };`
 - Variable
   - Representing read-write variable. 4 Variations are categorized by 2 aspects, whether to have initializer, and whether to be array variable.
-  - `.variable <name> = <value>;
-  - `.variable <name>;
-  - `.variable <name> [<length>] = { <value1>, <value2>, ... };
-  - `.variable <name> [<length>];
+  - `.variable <name> = <value>;`
+  - `.variable <name>;`
+  - `.variable <name> [<length>] = { <value1>, <value2>, ... };`
+  - `.variable <name> [<length>];`
 - Instruction
   - We can specify values or register entries as its operands. For the 2nd entry of register file, specify '$2'.
   - `[<label>: ] <mnemonic> <operand1>, <operand2>, ... ;`
