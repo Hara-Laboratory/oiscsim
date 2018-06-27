@@ -102,8 +102,7 @@ To place a section, it should be defined as:
   - `.startup`
 
 ## Acknowledgements
-Irony - .NET Language Implementation Kit
-Refer https://github.com/IronyProject/Irony. Thanks for the great parser library.
+Irony - .NET Language Implementation Kit (refer https://github.com/IronyProject/Irony) Thanks for the great parser library.
   
 ## License
 Copyright (c) 2018 Kaoru Saso.
