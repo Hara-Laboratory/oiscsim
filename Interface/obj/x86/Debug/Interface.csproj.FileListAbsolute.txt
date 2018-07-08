@@ -1,0 +1,12 @@
+E:\Lab\OiscSim\OiscSim\Interface\bin\x86\Debug\Interface.exe.config
+E:\Lab\OiscSim\OiscSim\Interface\bin\x86\Debug\Interface.exe
+E:\Lab\OiscSim\OiscSim\Interface\bin\x86\Debug\Interface.pdb
+E:\Lab\OiscSim\OiscSim\Interface\bin\x86\Debug\Irony.dll
+E:\Lab\OiscSim\OiscSim\Interface\obj\x86\Debug\Interface.exe
+E:\Lab\OiscSim\OiscSim\Interface\obj\x86\Debug\Interface.pdb
+C:\Users\edito\Documents\OiscSim\Interface\bin\x86\Debug\Interface.exe.config
+C:\Users\edito\Documents\OiscSim\Interface\obj\x86\Debug\Interface.exe
+C:\Users\edito\Documents\OiscSim\Interface\obj\x86\Debug\Interface.pdb
+C:\Users\edito\Documents\OiscSim\Interface\bin\x86\Debug\Interface.exe
+C:\Users\edito\Documents\OiscSim\Interface\bin\x86\Debug\Interface.pdb
+C:\Users\edito\Documents\OiscSim\Interface\bin\x86\Debug\Irony.dll

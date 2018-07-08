@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE49269B-EE73-43D0-9A1F-7ED0E68C92BD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interface</RootNamespace>
+    <AssemblyName>Interface</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Interface.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Irony">
+      <HintPath>.\Irony.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assemble\AssembleError.cs" />
+    <Compile Include="Assemble\AssemblerBase.cs" />
+    <Compile Include="Assemble\Block.cs" />
+    <Compile Include="Assemble\AssemblyCode.cs" />
+    <Compile Include="Assemble\IdentifierSearchResult.cs" />
+    <Compile Include="Assemble\IdentifierType.cs" />
+    <Compile Include="Assemble\IHasIdentifiers.cs" />
+    <Compile Include="Assemble\Instruction.cs" />
+    <Compile Include="Assemble\RegisterInfo.cs" />
+    <Compile Include="Assemble\SubRisc2\InstructionAssembler.cs" />
+    <Compile Include="Assemble\SubRisc2\SubRisc2Assembler.cs" />
+    <Compile Include="Assemble\ValueBaseType.cs" />
+    <Compile Include="Assemble\ValueRegister.cs" />
+    <Compile Include="Execute\CommonModule\EnumMemorymAccessType.cs" />
+    <Compile Include="Execute\SubRisc2\Cycle\Alu.cs" />
+    <Compile Include="Execute\SubRisc2\Cycle\ApplyStage.cs" />
+    <Compile Include="Execute\SubRisc2\Cycle\ComputeStage.cs" />
+    <Compile Include="Execute\SubRisc2\Cycle\FetchStage.cs" />
+    <Compile Include="Execute\SubRisc2\Cycle\RegisterFile.cs" />
+    <Compile Include="Execute\SubRisc2\Cycle\SubRISCCircuitGroup.cs" />
+    <Compile Include="Execute\SubRisc2\Cycle\SubRISCCycleModel.cs" />
+    <Compile Include="Execute\SubRisc2\Instruction\SubRisc2InstructionModel.cs" />
+    <Compile Include="Execute\CommonModule\ASyncRAMInterfaceRW1Low.cs" />
+    <Compile Include="Execute\CommonModule\ASyncRAMInterfaceRW1High.cs" />
+    <Compile Include="Execute\SubRisc\Cycle\ApplyStage.cs" />
+    <Compile Include="Execute\SubRisc\Cycle\ComputeStage.cs" />
+    <Compile Include="Execute\SubRisc\Cycle\FetchStage.cs" />
+    <Compile Include="Execute\SubRisc\Cycle\Alu.cs" />
+    <Compile Include="Execute\SubRisc\Cycle\SubRISCCircuitGroup.cs" />
+    <Compile Include="Execute\SubRisc\Cycle\SubRISCCycleModel.cs" />
+    <Compile Include="Execute\SubRisc\Cycle\RegisterFile.cs" />
+    <Compile Include="ISADispatcher.cs" />
+    <Compile Include="Assemble\Label.cs" />
+    <Compile Include="Assemble\MacroDefinition.cs" />
+    <Compile Include="Assemble\AssemblePosition.cs" />
+    <Compile Include="Assemble\Parsing\AssemblyParser.cs" />
+    <Compile Include="Assemble\ReferenceInfo.cs" />
+    <Compile Include="Assemble\SubRisc\InstructionAssembler.cs" />
+    <Compile Include="Assemble\RegisterMapping.cs" />
+    <Compile Include="Assemble\SubRisc\SubRiscAssembler.cs" />
+    <Compile Include="Assemble\SUBNEG4X\SUBNEG4XAssembler.cs" />
+    <Compile Include="Assemble\Symbol.cs" />
+    <Compile Include="Assemble\ValueBase.cs" />
+    <Compile Include="Assemble\ValueChar.cs" />
+    <Compile Include="Assemble\ValueInteger.cs" />
+    <Compile Include="Assemble\Macrocall.cs" />
+    <Compile Include="Assemble\Section.cs" />
+    <Compile Include="Assemble\ValueReference.cs" />
+    <Compile Include="Assemble\Variable.cs" />
+    <Compile Include="Assemble\Parsing\AssmeblyGrammer.cs" />
+    <Compile Include="Assemble\VariableAnalyzeInfo.cs" />
+    <Compile Include="Execute\CommonModule\SyncRAMInterfaceRW1R1.cs" />
+    <Compile Include="Execute\ExecuteSetupData.cs" />
+    <Compile Include="Execute\ModuleInputface.cs" />
+    <Compile Include="Execute\ModuleOutputfaceBase.cs" />
+    <Compile Include="Execute\SimulatorModelBase.cs" />
+    <Compile Include="Execute\ISyncObject.cs" />
+    <Compile Include="Execute\Subneg4X\Cycle\Subneg4XCircuitGroup.cs" />
+    <Compile Include="Execute\Subneg4X\Instruction\Subneg4XInstructionModel.cs" />
+    <Compile Include="Execute\SubRisc\Instruction\SubRiscInstructionModel.cs" />
+    <Compile Include="Execute\SyncModuleBase.cs" />
+    <Compile Include="Execute\Subneg4X\Cycle\Alu.cs" />
+    <Compile Include="Execute\AsyncModuleOutputface.cs" />
+    <Compile Include="Execute\SyncModuleOutputface.cs" />
+    <Compile Include="MessageManager.cs" />
+    <Compile Include="Execute\CommonModule\ROM.cs" />
+    <Compile Include="Execute\Subneg4X\Cycle\Subneg4XCycleModel.cs" />
+    <Compile Include="Execute\CommonModule\RAM.cs" />
+    <Compile Include="Misc\AddressRange.cs" />
+    <Compile Include="Misc\BinaryAccess.cs" />
+    <Compile Include="Misc\IVariousTableElement.cs" />
+    <Compile Include="Misc\VariousTable.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Execute\Subneg4\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
