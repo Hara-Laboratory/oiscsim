@@ -10,22 +10,6 @@ namespace Interface
     {
         static void Main(string[] args)
         {
-/*
-            args = new string[] {
-               //@"sng4/motiondetect_woExt.S",
-               //@"sbrsc/motiondetect.S",
-               //@"sbrsc2/motiondetect.S",
-               @"sbrsc/quick_pivot_dbrnch.S",
-               // @"sbrsc2/quick_pivot_dbrnch.S",
-                //@"yokota_qsort/quick-ref.S",
-                //@"sng4/diffuse.S",
-                "-l", "ipPe",
-            // "-o", "a.hex" };
-            "-e", "cycle",
-            "-emv",
-            "-emdump", @"aa.bin" };
-*/
-         
             //Parse arguments
             string inputPath = null, outputPath = null, executeMemoryDumpPath = null;
             bool executeRequest = false;
